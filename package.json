@@ -1,13 +1,13 @@
 {
   "name": "es-sa",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "[Demo](https://ppotatog.github.io/SA/demo/)",
-  "main": "./js/sa.js",
+  "main": "./dist/sa.js",
+  "peerDependencies": {
+    "react": ">=16.14.0"
+  },
   "scripts": {
     "build": "./node_modules/.bin/rollup -c -w"
-  },
-  "peerDependencies": {
-    "react": "^16.14.0"
   },
   "repository": {
     "type": "git",
@@ -40,7 +40,7 @@
     "@rollup/plugin-typescript": "^11.0.0",
     "@types/react": "^18.0.28",
     "prettier": "^2.8.4",
-    "rollup": "^3.19.1",
+    "rollup": "^2.79.1",
     "tslib": "^2.5.0"
   }
 }
