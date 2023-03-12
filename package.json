@@ -1,5 +1,5 @@
 {
-  "name": "sa",
+  "name": "es-sa",
   "version": "1.0.2",
   "description": "[Demo](https://ppotatog.github.io/SA/demo/)",
   "main": "./js/sa.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/es-sa/SA.git"
+    "url": "git+https://github.com/es-sa/ESSA.git"
   },
   "author": {
     "name": "ppotatoG",
@@ -20,7 +20,7 @@
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/es-sa/SA/issues"
+    "url": "https://github.com/es-sa/ESSA/issues"
   },
   "homepage": "https://github.com/es-sa/SA#readme",
   "dependencies": {
