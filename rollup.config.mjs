@@ -4,7 +4,7 @@ import { terser } from 'rollup-plugin-terser';
 import commonjs from '@rollup/plugin-commonjs';
 
 export default {
-  input: { main: './src/js/es-sa.js', component: './src/js/SaBox.js' },
+  input: { main: './lib/js/es-sa.js', component: './lib/js/SaBox.js' },
   output: {
     format: 'esm',
     dir: 'dist',
@@ -16,7 +16,7 @@ export default {
       tsconfig: './tsconfig.json',
       declaration: true,
       declarationDir: './dist/types',
-      rootDir: './src',
+      rootDir: './lib',
     }),
     terser(),
     commonjs(),

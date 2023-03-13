@@ -1,6 +1,6 @@
 {
   "name": "es-sa",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "[Demo](https://ppotatog.github.io/SA/demo/)",
   "main": "./dist/sa.js",
   "peerDependencies": {
@@ -32,8 +32,7 @@
     "cssAnimation"
   ],
   "files": [
-    "src",
-    "SA/dist"
+    "dist"
   ],
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.0.1",
