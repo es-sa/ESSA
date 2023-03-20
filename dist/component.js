@@ -1,2 +1,26 @@
-import t,{useRef as e,useEffect as a}from"react";import{ESSA as s}from"./main.js";const r=({type:r,duration:i,delay:n,timing:o,once:d,className:u,children:c})=>{const l=e(null);return a((()=>{const t=l.current;if(!t)return;const e=d?"false":"true";return t.setAttribute("data-sa",`${r}`),t.setAttribute("data-sa-duration",`${i}`),t.setAttribute("data-sa-delay",`${n}`),t.setAttribute("data-sa-time",`${o}`),t.setAttribute("data-sa-once",e),s.saNodes.push(t),s.intersection(),()=>{s.saNodes=s.saNodes.filter((e=>e!==t))}}),[r,i,n,o,d]),t.createElement("div",{className:`saBox ${u}`,ref:l},c)};export{r as SaBox};
+import React, { useRef, useEffect } from 'react';
+import { ESSA } from './main.js';
+
+const SaBox = ({ type, duration, delay, timing, once, className, children, }) => {
+    const ref = useRef(null);
+    useEffect(() => {
+        const saNode = ref.current;
+        if (!saNode)
+            return;
+        const saOnce = once ? 'false' : 'true';
+        saNode.setAttribute('data-sa', `${type}`);
+        saNode.setAttribute('data-sa-duration', `${duration}`);
+        saNode.setAttribute('data-sa-delay', `${delay}`);
+        saNode.setAttribute('data-sa-time', `${timing}`);
+        saNode.setAttribute('data-sa-once', saOnce);
+        ESSA.saNodes.push(saNode);
+        ESSA.intersection();
+        return () => {
+            ESSA.saNodes = ESSA.saNodes.filter((node) => node !== saNode);
+        };
+    }, [type, duration, delay, timing, once]);
+    return (React.createElement("div", { className: `saBox ${className}`, ref: ref }, children));
+};
+
+export { SaBox };
 //# sourceMappingURL=component.js.map

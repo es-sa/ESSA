@@ -1,9 +1,8 @@
 {
   "name": "es-sa",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "[Demo](https://ppotatog.github.io/SA/demo/)",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.js",
+  "main": "./dist/main.js",
   "peerDependencies": {
     "react": ">=16.14.0"
   },
