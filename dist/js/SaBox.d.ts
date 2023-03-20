@@ -8,5 +8,5 @@ interface SaBoxProps {
     className?: string;
     children?: React.ReactNode;
 }
-declare const SaBox: React.FC<SaBoxProps>;
-export default SaBox;
+export declare const SaBox: React.FC<SaBoxProps>;
+export {};
